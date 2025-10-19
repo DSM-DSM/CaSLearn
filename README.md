@@ -35,7 +35,14 @@ and perform PC algorithm on our platform.
 
 ## 3. Start Experiments
 
+Before starting experiments, we should set configration of our simualtion study by modifying config files in folder 
+```configs```. Then we can start our experiments by running **run.py** in the terminal by:
+```bash
+conda activate your_env
+cd .
+python run.py --config config_10.yml --seed 8888
 
+```
 
 ## 4. Benchmark Results
 Here we have the simulation results in folder *result*. In *result*, there are 24 seperated folders which contains simulation
@@ -48,14 +55,18 @@ simulation study.
 
 ## 5. Visualization
 
+We use results in folder ```result``` for visualization. All figures are stored in folder ```figure```. 
+![Figure1](/figure/Neural%20Network_10_Cauchy.png "10nn_cauchy")
+![Figure2](/figure/Polynomial_50_GaussianMixture5.png "50poly_gaumix")
 
+Above are two pictures displayed in our paper.
 
-## Acknowledgement
+## 6. Acknowledgement
 
 This is platform is build on the basis of Python Package [causal-learn](https://github.com/py-why/causal-learn), which inspired
 me update our code and make some extension functions. 
 
-## Citation
+## 7. Citation
 Please cite as:
 ```
 @article{}
